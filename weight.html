@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="weight.css" rel="stylesheet" type="text/css" >
+    <title>Unit Converter</title>
+    <script src="converter.js"></script>
+</head>
+<body>
+  <h1>Unit Converter</h1>
+  
+  <label for="input">Input value:</label>
+  <input type="number" id="input" placeholder="Enter value">
+  
+  <label for="from">From:</label>
+  <select id="from">
+    <option value="cm">Centimeter (cm)</option>
+    <option value="inch">Inch (in)</option>
+    <option value="m">Meter (m)</option>
+    <option value="ft">Feet (ft)</option>
+    <!-- Add more options for other units -->
+  </select>
+  
+  <label for="to">To:</label>
+  <select id="to">
+    <option value="cm">Centimeter (cm)</option>
+    <option value="inch">Inch (in)</option>
+    <option value="m">Meter (m)</option>
+    <option value="ft">Feet (ft)</option>
+    <!-- Add more options for other units -->
+  </select>
+  
+  <button onclick="convert()">Convert</button>
+  
+  <h2>Result:</h2>
+  <p id="result"></p>
+
+  <script src="weight.js"></script>
+</body>
+</html>
