@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Somma's store</title> 
+    <link href="ss2.css" rel="stylesheet" type="text/css" >
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.4.2/css/all.css">
+
+</head>
+<body>
+<header>
+    <div class="logo">
+        <img id="mlogo" src="mainlogo.jpeg">
+        <h1>Strictly Scrunchies</h1>
+        <h3>GET SCRUNCHIFIED NOW!!!</h3>
+        <img id="slogo" src="logoorbg.jpg">
+    </div>
+    <div id="navbar">
+        <a  href="javascript:void(0)">Home</a>
+        <a href="javascript:void(0)">Shop Now</a>
+        <a href="javascript:void(0)">Contact us</a>
+        <a href="javascript:void(0)">Blog</a>
+        <a href="javascript:void(0)">About Us</a>
+        <a href="login.html">Login</a>
+        <a href="javascript:void(0)" class="cart-icon"><i class="fas fa-shopping-cart"></i></a>
+      </div>
+      
+      <script>
+        window.onscroll = function() {myFunction()};
+        
+        var navbar = document.getElementById("navbar");
+        var sticky = navbar.offsetTop;
+        
+        function myFunction() {
+          if (window.pageYOffset >= sticky) {
+            navbar.classList.add("sticky")
+          } else {
+            navbar.classList.remove("sticky");
+          }
+        }
+        </script>
+
+    </header>
+
+    <main>
+        <section>
+            <h2>Featured Products</h2>
+            <ul class="product-list">
+                <li>
+                    <img src="purple.JPEG" alt="product1" style="width: 100%; height: 400px;" target="blank" >
+                    <h3>Product 1</h3>
+                    <p>Description of product</p>
+                    <button onclick="addToCart()">Add to Cart</button>
+                    <div class="cart-icon" id="cartIcon">0</div>
+                  
+                    <script>
+                      let cartItemCount = 0; // Initial item count
+                  
+                      function addToCart() {
+                        cartItemCount++; // Increase item count
+                        document.getElementById("cartIcon").innerText = cartItemCount; // Update cart icon with new count
+                      }
+                    </script>
+                </li>
+
+                <li>
+                    <img src="blackwidow.JPG" alt="product2" style="width: 100%; height: 400px;" target="blank">
+                    <h3>Product 2</h3>
+                    <p>Description of product</p>
+                    <button onclick="addToCart()">Add to Cart</button>
+                    <div class="cart-icon" id="cartIcon">0</div>
+                  
+                    <script>
+        
+                      function addToCart() {
+                        cartItemCount++; // Increase item count
+                        document.getElementById("cartIcon").innerText = cartItemCount; // Update cart icon with new count
+                      }
+                    </script>
+                </li>
+
+                <li>
+                    <img src="blossom.JPEG" alt="product3" style="width: 100%; height: 400px;" target="blank">
+                    <h3>Product 3</h3>
+                    <p>Description of product</p>
+                    <button onclick="addToCart()">Add to Cart</button>
+  <div class="cart-icon" id="cartIcon">0</div>
+
+  <script>
+
+    function addToCart() {
+      cartItemCount++; // Increase item count
+      document.getElementById("cartIcon").innerText = cartItemCount; // Update cart icon with new count
+    }
+  </script>
+                </li>
+
+                <li>
+                    <img src="greensuede.JPG" alt="product4" style="width: 100%; height: 400px;" target="blank">
+                    <h3>Product 4</h3>
+                    <p>Description of product</p>
+                    <button onclick="addToCart()">Add to Cart</button>
+  <div class="cart-icon" id="cartIcon">0</div>
+
+  <script>
+
+    function addToCart() {
+      cartItemCount++; // Increase item count
+      document.getElementById("cartIcon").innerText = cartItemCount; 
+    }
+  </script>
+                </li>
+            </ul>
+        </section> 
+    </main>
+
+    <footer>
+        <div class="footer">
+            For more inquiries :
+            <br>
+            <br>
+            <div>
+            <a target="blank" href="https://www.instagram.com/strictly_scrunchies/"> <i class="fa-brands fa-instagram social-icon"></i></a>
+            <a target="blank" href="https://wa.me/c/2348101201611"><i class="fa-brands fa-whatsapp social-icon"></i></a>
+            <a target="blank" href="https://www.pinterest.com/Sommachumadu/"><i class="fa-brands fa-pinterest social-icon"></i></a>
+            <a target="blank" href="mailto:sommachumadu@yahoo.com?subject=
+                Email%20Subject&body=Email%20body"><i  class="fas fa-envelope social-icon"></i></a>
+            <a target="blank" href="https://web.snapchat.com/2eed0753-1ece-5729-b4f6-68b8f6a8ae71"><i  class="fa-brands fa-snapchat social-icon"></i></a>
+         </div>
+        </div> 
+        <p >© 2023 Shop Strictly Scrunchies</p>
+    </footer>
+</body>
+</html>
